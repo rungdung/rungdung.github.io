@@ -10,7 +10,9 @@ const options = {
     style: 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
   }
 
-
+function preload(){
+    data = loadJSON('./data/taxiday1.geojson');
+}
 function setup(){
     canvas = createCanvas(800,700);
     myMap = mappa.tileMap(options); 
